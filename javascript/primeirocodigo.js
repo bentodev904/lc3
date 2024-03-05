@@ -1,4 +1,3 @@
-x=+prompt("roier pode falar o numero bbg")
 function compare(x) {
     if(x < 5){
         alert("seu numero é menor que 5... :(");
