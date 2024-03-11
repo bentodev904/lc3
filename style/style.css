@@ -2,7 +2,7 @@
     margin: 0px;
 }
 
-body{
+html, body{
     width: 100%;
     height: 100%;
 }
@@ -11,17 +11,18 @@ body{
     display: flex;
     flex-direction: row;
     align-items: center;
+    align-self: center;
     justify-content: center;
     flex-wrap: wrap;
 
     width: 100%;
     height: 100%;
+    height: fit-content;
 }
 .content h1{
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     font-size: 10vh;
     width: 100%;
-    height: auto;
     text-align: center;
 }
 
