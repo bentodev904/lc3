@@ -8,17 +8,29 @@
     <link href="style/style.css" type="text/css" rel="stylesheet">
     <script type="text/javascript" src="javascript/calcular.js"></script>
     <script type="text/javascript" src="javascript/comparecom5.js"></script>
+    <script type="text/javascript" src="javascript/nomeeafins.js"></script>
 </head>
 
 <body>
+    <div class="background">
     <div class="content">
     <h1> Modularização de Código </h1>
-    <input type="number" id="num" placeholder="Digite o primeiro numero">
-    <input type="button" value="com5" onclick="compare(document.getElementById('num').value)">
-    <input type="number" id="num2" placeholder="Digite o segundo numero">
-    <input type="button" value="com5" onclick="compare(document.getElementById('num2').value)">
-    <input type="button" id="contar" value="Contas" onclick="maths(document.getElementById('num').value)">
+    <input type="number" id="num" placeholder="Digite o primeiro numero"/>
+    <input type="button" value="com5" onclick="compare(document.getElementById('num').value)"/>
+    <input type="number" id="num2" placeholder="Digite o segundo numero"/>
+    <input type="button" value="com5" onclick="compare(document.getElementById('num2').value)"/>
+    <input type="button" id="contar" value="Contas" onclick="maths(document.getElementById('num').value)"/>
     <p id="conta"></p>
+    <h2 id="insira"> Insira seu nome </h2>
+    <p>
+        <input type="text" id="name" placeholder="informe o nome"/>
+        <input type="button" value="Envio" id="enviar" onclick="testname(document.getElementById('name').value)">
+        <br>
+        <input type="button" value="" id="yes" style="background-color:transparent;border:0px;" onclick="yes(document.getElementById('name').value)">
+        <input type="button" value="" id="no" style="background-color:transparent;border:0px;" onclick="no(document.getElementById('name').value)">
+        <p id="salvar"></p>
+    </p>
+    </div>
     </div>
 </body>
 
