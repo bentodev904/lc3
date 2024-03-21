@@ -10,7 +10,11 @@ function testname(x){
     document.getElementById('no').style = "background-color:red;border-radius:3px"
 }
 
+function no(x){
+    return false
+}
+
 function yes(x){
-    save = x;
-    document.getElementById('salvar').value =  save
+    save = [x];
+    document.getElementById('salvar').innerHTML =  save
 }
