@@ -9,5 +9,7 @@ function escreveCadastro() {
     }
     cadastro = [];
 }
-
-AbortController
+function limpar() {
+    x = document.getElementById("mostrar")
+    x.innerHTML = ''
+}
