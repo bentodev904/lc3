@@ -1,7 +1,8 @@
 function tamanhocpf(cpf){
-    if(cpf.lenght != 11){
+    var x = String(cpf.length);
+    if(x != 11){
         document.getElementById('cpfresultado').innerHTML = ("cpf Errado");
-    } else if(cpf.lenght == 10){
+    } else if(x == 11){
         var dig = parseInt(cpf.substring(8, 9))
         switch(dig){
             case 0: document.getElementById('cpfresultado').innerHTML = ("CPF proveniente dos estados:<br /> <b>Rio Grande do Sul</b>"); break;
