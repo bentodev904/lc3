@@ -1,4 +1,4 @@
-<div class="container text-center" id="calculos" style="display: none;">
+<div class="container text-center" id="calculos" style="display: none;"> <!--começa com o style em none para nao aparecer-->
     <div class="row">
         <div class="input-group input-group-lg">
             <span class="input-group-text" id="inputGroup-sizing-lg">Digite o primeiro numero</span>
@@ -9,15 +9,17 @@
             <span class="input-group-text" id="inputGroup-sizing-lg">Digite o segundo numero</span>
             <input type="number" id="num2" class="form-control"
                 aria-label="Dollar amount (with dot and two decimal places)">
-        </div>
+        </div> <!--inputs-->
     </div>
     <br>
     <div class="col">
         <input type="button" class="btn btn-primary btn-lg" id="contar" value="Contas"
             class="btn btn-outline-success" onclick="maths(document.getElementById('num').value)" />
+            <!--botao que ao clicar calcula o que foi posto nos inputs, chamando o script calcular.js-->
         <br>
         <div id="liveAlertPlaceholder">
             <p id="conta"></p>
+            <!--div que armazena os dados, mostra os resultados-->
         </div>
     </div>
 </div>

@@ -1,5 +1,6 @@
 function maths(x, y) {
   y = document.getElementById("num2").value;
+  //define uma variavel para
   if (x === "" || y === "") {
     alert("O campo está vazio!");
     return false;
