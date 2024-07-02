@@ -1,32 +1,37 @@
-function aparececompare() {
-    document.getElementById('compare').style.display = 'block'
-    document.getElementById('calculos').style.display = 'none'
-    document.getElementById('cadastro').style.display = 'none'
-    document.getElementById('cpf').style.display = 'none'
-}
-function aparececalculo() {
-    document.getElementById('compare').style.display = 'none'
-    document.getElementById('calculos').style.display = 'block'
-    document.getElementById('cadastro').style.display = 'none'
-    document.getElementById('cpf').style.display = 'none'
-}
-function aparececadastro() {
-    document.getElementById('compare').style.display = 'none'
-    document.getElementById('calculos').style.display = 'none'
-    document.getElementById('cadastro').style.display = 'block'
-    document.getElementById('cpf').style.display = 'none'
-}
-function aparececpf() {
-    document.getElementById('compare').style.display = 'none'
-    document.getElementById('calculos').style.display = 'none'
-    document.getElementById('cadastro').style.display = 'none'
-    document.getElementById('cpf').style.display = 'block'
-}
+// function aparececompare() {
+//     //quando chamada a função, troca o display do modulo compare de none para block
+//     document.getElementById('compare').style.display = 'block'
+//     document.getElementById('calculos').style.display = 'none'
+//     document.getElementById('cadastro').style.display = 'none'
+//     document.getElementById('cpf').style.display = 'none'
+// }
+// function aparececalculo() {
+//     //quando chamada a função, troca o display do modulo calculos de none para block
+//     document.getElementById('compare').style.display = 'none'
+//     document.getElementById('calculos').style.display = 'block'
+//     document.getElementById('cadastro').style.display = 'none'
+//     document.getElementById('cpf').style.display = 'none'
+// }
+// function aparececadastro() {
+//     //quando chamada a função, troca o display do modulo cadastro de none para block
+//     document.getElementById('compare').style.display = 'none'
+//     document.getElementById('calculos').style.display = 'none'
+//     document.getElementById('cadastro').style.display = 'block'
+//     document.getElementById('cpf').style.display = 'none'
+// }
+// function aparececpf() {
+//     //quando chamada a função, troca o display do modulo cpf de none para block
+//     document.getElementById('compare').style.display = 'none'
+//     document.getElementById('calculos').style.display = 'none'
+//     document.getElementById('cadastro').style.display = 'none'
+//     document.getElementById('cpf').style.display = 'block'
+// }
 
 function menu2(menu){
-    alert(menu);
+    //quando chamada, a função puxa o conteudo do modulo menu, e o deixa visivel, substituindo todo o codigo acima
+    // alert(menu);
     $('#conteudo').load("modulos/"+menu+".html");
-    document.getElementById("'"+menu+"'").style.display = 'block';
+    // document.getElementById("'"+menu+"'").style.display = 'block';
 }
 
 

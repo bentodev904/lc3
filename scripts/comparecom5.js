@@ -1,7 +1,9 @@
 function compare(x) {
+  //coloca o valor do input na variavel x
   if (x === "") {
     alert("O campo está vazio!");
     return false;
+    //ve se tem um input para comparar, se nao, para o codigo depois do alert
   }
   if (x < 5) {
     if (x < 0) {
@@ -14,4 +16,5 @@ function compare(x) {
   } else {
     alert(x + " é maior que 5");
   }
+  //testa e alerta com uma sequencia de ifs e elses
 }
