@@ -30,7 +30,7 @@
 function menu2(menu){
     //quando chamada, a função puxa o conteudo do modulo menu, e o deixa visivel, substituindo todo o codigo acima
     // alert(menu);
-    $('#conteudo').load("modulos/"+menu+".html");
+    $('#conteudo').load("../modulos/"+menu+".html");
     // document.getElementById("'"+menu+"'").style.display = 'block';
 }
 
