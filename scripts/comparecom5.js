@@ -1,3 +1,4 @@
+try{
 function compare(x) {
   //coloca o valor do input na variavel x
   if (x === "") {
@@ -17,4 +18,8 @@ function compare(x) {
     alert(x + " é maior que 5");
   }
   //testa e alerta com uma sequencia de ifs e elses
+}} catch(error) {
+  console.log("O nome do erro é: ${erro.name}\n");
+  console.log("A mensagem do erro é: ${erro.message}\n");
+  console.log("A stack do erro é: ${erro.stack}\n");
 }

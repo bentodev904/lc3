@@ -27,11 +27,15 @@
 //     document.getElementById('cpf').style.display = 'block'
 // }
 
-function menu2(menu){
+try{ function menu2(menu){
     //quando chamada, a função puxa o conteudo do modulo menu, e o deixa visivel, substituindo todo o codigo acima
     // alert(menu);
     $('#conteudo').load("../modulos/"+menu+".html");
     // document.getElementById("'"+menu+"'").style.display = 'block';
+}}catch(error) {
+    console.log("O nome do erro é: ${erro.name}\n");
+    console.log("A mensagem do erro é: ${erro.message}\n");
+    console.log("A stack do erro é: ${erro.stack}\n");
 }
 
 

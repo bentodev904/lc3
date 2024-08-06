@@ -1,4 +1,5 @@
-function maths(x, y) {
+try{
+  function maths(x, y) {
   y = document.getElementById("num2").value;
   //define uma variavel para armazenar o segundo input
   if (x === "" || y === "") {
@@ -23,4 +24,8 @@ function maths(x, y) {
   ];
   document.getElementById("conta").innerHTML = result;
   //manda os resultados para a div "conta" no index
+}} catch(error) {
+  console.log("O nome do erro é: ${erro.name}\n");
+  console.log("A mensagem do erro é: ${erro.message}\n");
+  console.log("A stack do erro é: ${erro.stack}\n");
 }

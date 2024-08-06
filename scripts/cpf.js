@@ -1,3 +1,4 @@
+try{
 function tamanhocpf(cpf){
     var x = String(cpf.length);
     //passa o input cpf como string, e seu tamanho para uma variavel x
@@ -21,4 +22,8 @@ function tamanhocpf(cpf){
             //testa para cada caso e identifica a origem do cpf
         }
     }
+}} catch(error) {
+    console.log("O nome do erro é: ${erro.name}\n");
+    console.log("A mensagem do erro é: ${erro.message}\n");
+    console.log("A stack do erro é: ${erro.stack}\n");
 }
