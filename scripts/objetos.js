@@ -11,6 +11,14 @@ const Pessoa ={
         return "A pessoa chama: "+this.nomecompleto()+" Nascida em: "+this.dtnascimento+" Possui o CPF: "+this.cpf+" Com o sexo: "+this.sexo;
     }
 };
-console.log(Pessoa.especificar());
-const novapessoa = Object.create(Pessoa);
-novapessoa.nome = "jose";
+function objeto(nome, nomemeio, nomeultimo, nomecompleto, dtnascimento, cpf, sexo){
+    const novapessoa = Object.create(Pessoa);
+    novapessoa.nome = nome;
+    novapessoa.nomemeio = nomemeio;
+    novapessoa.nomeultimo = nomeultimo;
+    novapessoa.nomecompleto = nomecompleto;
+    novapessoa.dtnascimento = dtnascimento;
+    novapessoa.cpf = cpf;
+    novapessoa.sexo = sexo;
+    return novapessoa
+}
