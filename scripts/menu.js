@@ -1,42 +1,14 @@
-// function aparececompare() {
-//     //quando chamada a função, troca o display do modulo compare de none para block
-//     document.getElementById('compare').style.display = 'block'
-//     document.getElementById('calculos').style.display = 'none'
-//     document.getElementById('cadastro').style.display = 'none'
-//     document.getElementById('cpf').style.display = 'none'
-// }
-// function aparececalculo() {
-//     //quando chamada a função, troca o display do modulo calculos de none para block
-//     document.getElementById('compare').style.display = 'none'
-//     document.getElementById('calculos').style.display = 'block'
-//     document.getElementById('cadastro').style.display = 'none'
-//     document.getElementById('cpf').style.display = 'none'
-// }
-// function aparececadastro() {
-//     //quando chamada a função, troca o display do modulo cadastro de none para block
-//     document.getElementById('compare').style.display = 'none'
-//     document.getElementById('calculos').style.display = 'none'
-//     document.getElementById('cadastro').style.display = 'block'
-//     document.getElementById('cpf').style.display = 'none'
-// }
-// function aparececpf() {
-//     //quando chamada a função, troca o display do modulo cpf de none para block
-//     document.getElementById('compare').style.display = 'none'
-//     document.getElementById('calculos').style.display = 'none'
-//     document.getElementById('cadastro').style.display = 'none'
-//     document.getElementById('cpf').style.display = 'block'
-// }
-
-try{ function menu2(menu){
-    //quando chamada, a função puxa o conteudo do modulo menu, e o deixa visivel, substituindo todo o codigo acima
-    // alert(menu);
-    $('#conteudo').load("../modulos/"+menu+".html");
-    // document.getElementById("'"+menu+"'").style.display = 'block';
-}}catch(error) {
-    console.log("O nome do erro é: ${erro.name}\n");
-    console.log("A mensagem do erro é: ${erro.message}\n");
-    console.log("A stack do erro é: ${erro.stack}\n");
-}
+function menu(menu){
+    try{ 
+        //quando chamada, a função puxa o conteudo do modulo menu, e o deixa visivel, substituindo todo o codigo acima
+        // alert(menu);
+        $('#conteudo').load("../modulos/"+menu+".html");
+        // document.getElementById("'"+menu+"'").style.display = 'block';
+    }catch(error) {
+        console.log("O nome do erro é: ${erro.name}\n");
+        console.log("A mensagem do erro é: ${erro.message}\n");
+        console.log("A stack do erro é: ${erro.stack}\n");
+}}
 
 
 

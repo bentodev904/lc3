@@ -14,7 +14,7 @@ try{
         x = document.getElementById("mostrar")
         //coloca o "espaco" no index como uma variavel
         for (var cont in cadastro) {
-            x.innerHTML += `Nome: ${cadastro[cont].nome} | ultimonome: ${cadastro[cont].ultimonome} | Telefone: ${cadastro[cont].telefone} <br>`
+            x.innerHTML += `Nome: ${cadastro[cont].nome} | nomeultimo: ${cadastro[cont].nomeultimo} | Telefone: ${cadastro[cont].telefone} <br>`
             //para cada cont(variavel, creio que começe em 0) dentro de cadastro(vetor que definimos acima), coloca no html (escreve) "..." chama o que deve ser mostrado, na posiçao [cont]
         }
         cadastro = [];
