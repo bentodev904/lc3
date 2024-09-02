@@ -29,18 +29,12 @@ try{
 function escevecadastro() {
     lista = '';    
     for (let i = 0; i < Object.keys(pessoacadastro).length; i++) {
-        lista+= pessoacadastro[Object.keys(pessoacadastro)[i]].especificar()+"<br />";
+        lista+= pessoacadastro[Object.keys(pessoacadastro)[i]].especificar()+"<br/>";
     }
     document.getElementById("pessoalista").innerHTML = lista;
-
     return false;
 }}catch(error) {
     console.log("O nome do erro é: ${erro.name}\n");
     console.log("A mensagem do erro é: ${erro.message}\n");
     console.log("A stack do erro é: ${erro.stack}\n");
-}
-function del() {
-    x = this.pessoacadastro
-    x.innerHTML = ''
-    //so esvazia a div quando chamada a function
 }
